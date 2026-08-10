@@ -1,0 +1,54 @@
+# ============================================================
+# SECURITY ENGINEERING — Flagship Tools Repo
+# Part of amritesh-sec research hub
+# ============================================================
+
+title: "Security Engineering | Amritesh"
+tagline: "Open Source Security Tools · Encryption · Data Protection · Zero Trust"
+description: "Open source security engineering tools covering reconnaissance, web and API testing, DFIR forensics, detection, data protection, and zero trust — by Amritesh. United States, United Kingdom, and European Union focus."
+author: "Amritesh"
+baseurl: "/security-engineering"
+url: "https://amritesh-sec.github.io"
+
+parent_site:
+  name: "Amritesh.sec"
+  url: "https://amritesh-sec.github.io"
+
+nordvault_url: "https://nordvaultsec.github.io"
+
+lang: "en"
+timezone: "Europe/London"
+permalink: /:year/:month/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Amritesh"
+      category: "security-engineering"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+  - TEMPLATE*.md

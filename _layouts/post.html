@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<article class="post-single">
+  <header class="post-header">
+    <div class="container">
+      <div class="post-breadcrumb">
+        <a href="{{ site.parent_site.url }}">Amritesh.sec</a>
+        <span>›</span>
+        <a href="{{ site.baseurl }}/">Security Engineering</a>
+        <span>›</span>
+        <span>{{ page.title | truncate: 40 }}</span>
+      </div>
+      {% if page.category %}<span class="post-category">{{ page.category | upcase | replace: '-', ' ' }}</span>{% endif %}
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}<p class="post-subtitle">{{ page.description }}</p>{% endif %}
+      <div class="post-meta">
+        <span>{{ page.author | default: site.author }}</span>
+        <span class="sep">·</span>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        <span class="sep">·</span>
+        <span id="readingTime"></span>
+      </div>
+      {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </header>
+  <div class="post-body">
+    <div class="container">
+      <div class="post-content">{{ content }}</div>
+      <div class="post-disclaimer">
+        <strong>⚠ Disclaimer:</strong> All tools and research published here are for
+        authorised security testing and defensive purposes only. Use only in environments
+        you own or have explicit written permission to test.
+        <a href="{{ site.parent_site.url }}/disclaimer/">Full Disclaimer →</a>
+      </div>
+      <div class="post-footer-nav">
+        <a href="{{ site.baseurl }}/" class="btn-back">← All Tools</a>
+        <a href="{{ site.parent_site.url }}" class="btn-parent">Amritesh.sec ↗</a>
+      </div>
+    </div>
+  </div>
+</article>
+<script>
+  const c = document.querySelector('.post-content');
+  if (c) {
+    const m = Math.ceil(c.innerText.split(/\s+/).length / 200);
+    document.getElementById('readingTime').textContent = m + ' min read';
+  }
+</script>
