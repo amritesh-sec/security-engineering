@@ -3,7 +3,7 @@
 ![Live](https://img.shields.io/badge/status-live-7c5cbf?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/amritesh-sec/security-engineering?style=for-the-badge&color=7c5cbf)
 ![License](https://img.shields.io/badge/tools-MIT-00d4d4?style=for-the-badge)
-![Focus](https://img.shields.io/badge/focus-14%20Tools%20%7C%20Python%20%7C%20Rust-7c5cbf?style=for-the-badge)
+![Focus](https://img.shields.io/badge/focus-Tools%20%7C%20Python%20%7C%20Rust-7c5cbf?style=for-the-badge)
 
 Open source security engineering tools covering reconnaissance, web and API testing, DFIR forensics, detection, data protection, and zero trust enforcement. Part of the [amritesh-sec](https://amritesh-sec.github.io) research hub.
 
