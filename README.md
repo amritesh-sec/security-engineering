@@ -11,7 +11,7 @@ Open source security engineering tools covering reconnaissance, web and API test
 
 ---
 
-## Tools (14)
+## Tools 
 
 | # | Tool | Language | Category |
 |---|------|----------|----------|
